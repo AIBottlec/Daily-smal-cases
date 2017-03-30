@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+   /*for (var i = 1; i < 10; i++) {
+			for (var j = 1; j <= 10-i; j++) {
+				if(j<i){
+					document.write("&nbsp;");
+				}else{
+					document.write("*");
+				}
+			}
+			document.write("<br>")
+	}
+
+	document.write("<hr>");
+
+	for (var i = 1; i < 10; i++) {
+		for (var j = 1; j <= i; j++) {
+			if(j<(10-i)){
+				document.write("&nbsp");
+				// continue;
+			}else{
+				document.write("*");
+			}
+		}
+		document.write("<br>");
+	}
+
+	document.write("<hr>");
+
+	for (var i = 9; i > 0; i--) {
+		if(i%2!=0){
+			for(var k = 0;k<(9-i)/2;k++){
+				document.write("&nbsp;");
+			}
+			for (var j = 1; j <= i; j++) {
+				
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+		
+	}*/
+
+	var col = parseInt(prompt("请输入列数："));
+	col = col%2 ? col : (col + 1);
+	for (var i = 0; i < col;i ++){
+		for (var j = 0; j < col-i; j++){
+			if(j<i){
+				document.write("&nbsp;");//&ensp 半角空格
+			}else{
+				document.write("*");
+			}
+		}
+		document.write("<br>");
+	}
+</script>

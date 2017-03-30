@@ -1,0 +1,22 @@
+<!-- 兔子出生后三个月起，一对兔子每个月可以生一对兔子，一年一对兔子可以繁殖多少对 -->
+<!-- 1 1 2 3 5 8-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+var a = 1;
+var b = 1;
+var sum = 0;
+for(var i = 3;i <= 10;i++){
+	sum = a + b;
+	a = b;
+	b = sum;
+}
+console.log(sum)
+</script>

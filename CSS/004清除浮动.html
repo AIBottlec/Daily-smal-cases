@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动</title>
+	<style>
+		.wrapper{width:500px;padding: 0;margin:0;}
+		.top,.bot{height:100px;}
+		.top{background:green;}
+		.middle{margin:10px 0 ;}
+		.lf{width:300px;height:300px;float:left;background:pink;}
+		.rt{width:190px;height:300px;float:right;background:red}
+		.bot{background: orange;}
+		.clearfix:after{
+			content: "";
+			width:0;
+			height:0;
+			display:block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper ">
+		<div class="top"></div>
+		<div class="middle clearfix">
+			<div class="lf"></div>
+			<div class="rt"></div>
+			<div class="add"></div>
+		</div>
+		<div class="bot"></div>
+	</div>
+</body>
+</html>
